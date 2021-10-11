@@ -1,0 +1,469 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*loader*/
+
+h1:hover {
+  color: red;
+}
+
+h2:hover {
+  color: yellow;
+}
+
+h3:hover{
+  color: blue;
+}
+
+p:hover {
+  color: #00FF27;
+}
+
+.loader {
+  background: white;
+  z-index: 300;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.loader img{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  
+}
+
+.hide {
+   display: none;
+}
+
+.loader img {
+  width: 30px;
+}
+
+
+
+.container {
+  overflow: hidden;
+}
+
+/*deisgn header*/
+
+.name {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  background: linear-gradient(45deg,#BB01DD,purple ,#761C87,#3B01FF,#000FB9);
+  border-bottom: 5px solid #5F1676;
+  padding-top: 120px;
+  padding-bottom: 70px;
+  color: white;
+}
+
+.name h2 {
+  color: #FFEF87;
+  font-size: 42px;
+}
+
+.name p {
+  font-size: 22px;
+}
+
+.name h1 {
+  color: #FFC1C1;
+  font-size: 63px;
+  font-family: 'Ephesis', cursive;
+}
+
+/*SideNavigation*/
+
+.sideNav {
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  background: rgba(0,0,0,0.6);
+  box-shadow: -5px -1px 90px black,
+  inset 5px 1px 8px black;
+  transition: 0.5s;
+  z-index: 100;
+}
+
+.sideNav nav ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.sideNav nav ul li a {
+  color: white;
+  display: block;
+  margin: 20% 20px;
+  text-align: center;
+}
+
+.sideNav nav ul li a:hover {
+  color: red;
+}
+
+.sideNav nav {
+  margin-top: 30%;
+}
+
+.navbtn {
+  position: fixed;
+}
+
+#menuBtn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: yellow;
+  box-shadow: 2px 2px 20px gray;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 101;
+  margin: 30px 50px;
+}
+.aboutMe {
+  margin: 200px 50px;
+}
+
+.aboutMe h1 {
+  margin: 100px 20px;
+  font-size: 50px;
+  position: relative;
+}
+
+.aboutMe h1:before {
+  content: "";
+  width: 300px;
+  height: 10px;
+  background: linear-gradient(to left,red,purple,blue);
+  position: absolute;
+  top: 70px;
+  border-radius: 10px;
+  
+}
+
+.aboutMe section {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 20px;
+}
+
+.aboutMe h3 {
+  color: #939297;
+  font-size: 30px;
+  word-spacing: 5px;
+  
+}
+
+/*Skikls design*/
+
+.skills {
+  margin: 20px;
+  position: relative;
+}
+
+.skills h1 {
+  font-size: 50px;
+  margin: 20px 50px;
+}
+
+.skills section{
+  margin: 20px 50px;
+  font-size: 30px;
+}
+
+.skills section ul li{
+  list-style: none;
+  margin: 50px 10px;
+  transition: 0.5s;
+}
+
+.skills section ul li:hover {
+  transform: translateY(-20px);
+}
+
+.skills div img{
+  width: 100%;
+  margin-top: 120px;
+}
+
+.skills div{
+  right: 0;
+  text-align: center;
+}
+
+.skills h1:before {  
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 10px;
+  background: linear-gradient(to right,blue,purple,red);
+  top: 70px;
+  border-radius: 20px;
+}
+
+.skills section ul li{
+  background: linear-gradient(to left,blue,red);
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 100px;
+  color: black;
+  text-align: center;
+  font-weight: 900;
+  box-shadow: 5px 5px 20px #5C009E;
+  color: white;
+}
+
+
+/*projects*/
+
+
+.projects {
+  position: relative;
+}
+
+.projects h1{
+  font-size: 50px;
+  margin: 20px 50px;
+}
+
+.projects h1:before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 10px;
+  background: linear-gradient(to right, blue, purple, red);
+  top: 70px;
+  border-radius: 20px;font-size: 30px;
+  margin: 0px;
+}
+
+.projects h2{
+  margin: 100px 50px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+  color: white;
+  background: black;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 30px;
+  transition: 0.7s;
+}
+
+.projects h2:hover {
+  transform: translateY(-40px);
+  box-shadow: 5px 5px 30px black;
+}
+
+.projects section img{
+  width: 100%;
+}
+
+
+/*Footer*/
+
+.footer {
+  background:  #6D0098;
+  width: 100%;
+  position: relative;
+  left: 0;
+  height: 0;
+  padding: 70px;
+  height: 100%;
+  font-size: 130%;
+  margin-top: 300px;
+  border-top-left-radius: 300px;
+  box-shadow: -5px -5px 30px purple;
+}
+
+.footer footer {
+  margin: 40px 200px;
+  color:white;
+  width:70%;
+}
+
+.footer:hover {
+  background: #430858;
+  box-shadow: -5px -5px 30px #430858;
+}
+
+/*.footer span{
+  position: absolute;
+  background: #FF3FFF ;
+  z-index: -1; 
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 30px;
+  margin-left: 300px;
+  transform: rotate(-5deg)
+}
+
+.footer tip {
+   position: absolute;
+   background: pink;
+   z-index: -2;
+   height: 100%;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   margin-bottom: 50px;
+   margin-left: 250px;
+   transform: rotate(-10deg);
+}*/
+
+.footer footer ul li {
+  list-style: none;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+/*medial queries*/
+
+
+@media only screen and ( max-width: 800px) {
+    #menuBtn  {
+      margin: 20px;
+    }
+    .name h1{
+      font-size: 42px;
+    }
+    .name h2 {
+      font-size: 22px;
+    }
+    
+    .name p{
+      font-size: 15px;
+    }
+    .name {
+      padding: 80px 30px;
+      padding-bottom: 30px;
+    }
+    
+    .aboutMe h1 {
+      font-size: 30px;
+      margin: 0px;
+    }
+    
+    .aboutMe h1:before {
+      width: 150px;
+      top: 50px;
+      height: 6px;
+    }
+    
+    .aboutMe section {
+      font-size: 20px;
+      margin: 60px 5px;
+      margin-bottom: 10px;
+    }
+    
+    .aboutMe {
+      margin: 50px 30px;
+    }
+    
+    .aboutMe h3{
+      font-size: 15px;
+      margin: 30px -5px;
+    }
+    
+    .skills h1 {
+      font-size: 30px;
+      margin: 0px;
+    }
+    
+    .skills h1:before {
+      width: 250px;
+      top: 50px;
+      height: 6px;
+    }
+    
+    .skills section ul li {
+      font-size: 20px;
+      margin: 40px 20px;;
+    }
+    
+    .skills section{
+      margin-top: 80px;
+    }
+    
+    .skills div img{
+      width: 350px;
+      margin: 30px 10px;;
+    }
+    
+    .projects h1 {
+      font-size: 30px;
+    }
+    
+    .projects h1:before {
+      width: 150px;
+      top: 50px;
+      height: 6px;
+    }
+    
+    .projects h2{
+      font-size: 20px;
+      margin-top: 10px;
+      position: 10px;
+    }
+    
+    .footer {
+      width: 100%;
+      border-top-left-radius: 150px;
+      margin-top: 150px;
+      overflow: auto;
+    }
+    
+    .footer h1{
+      font-size: 30px;
+    }
+    
+    .footer footer ul li{
+      font-size: 15px;
+      margin: 10px 10px;
+    }
+    .footer footer {
+      position: relative;
+      margin: 10px;
+      padding-bottom: 5px;
+      width: 100%;
+    }
+    
+}
+
+img:hover {
+  box-shadow: 5px 5px 30px #534B56,
+              -5px -5px 30px #534B56;
+}
+
+img {
+  transition: 1.0s;
+  border-radius: 30px;
+}
