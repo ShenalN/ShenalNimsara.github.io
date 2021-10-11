@@ -9,10 +9,10 @@ sideNav.style.right = -400 + "px";
   function menuBar() {
     if (sideNav.style.right == -400 + "px") {
       sideNav.style.right = 0 + "px";
-      menuBtn.src = "images/menuclose.png";
+      menuBtn.src = "menuclose.png";
     }else {
       sideNav.style.right = -400 + "px";
-      menuBtn.src = "images/menu.png";
+      menuBtn.src = "menu.png";
     }
   }
   
